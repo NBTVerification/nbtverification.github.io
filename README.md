@@ -1,2 +1,3 @@
-# nbtverification.github.io
-Verification test for Google ReCaptcha.
+# NBTVerification
+**What is it?**
+This platform is a verification test for Google ReCaptcha.
