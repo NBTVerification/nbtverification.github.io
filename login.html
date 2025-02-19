@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        button { margin: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>Login Page</h1>
+
+    <div>
+        <h2>Or Login with Email & Password</h2>
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="password" placeholder="Password" id="password" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div>
+        <h2>Google ReCaptcha</h2>
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+        <button onclick="verifyCaptcha()">Submit</button>
+    </div>
+
+    <script>
+        function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            // Handle login logic here
+            console.log(Email: ${email}, Password: ${password});
+        }
+
+        function verifyCaptcha() {
+            // Verify the captcha here
+            console.log('Captcha verified');
+        }
+    </script>
+
+</body>
+</html>
