@@ -1,1 +1,19 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Login Page</title> <script src="https://www.google.com/recaptcha/api.js" async defer></script> <style> body { font-family: Arial, sans-serif; } button { margin: 10px; } </style> </head> <body> <h1>Login Page</h1> <div> <h2>Or Login with Email & Password</h2> <input type="email" placeholder="Email" id="email" required> <input type="password" placeholder="Password" id="password" required> <button id="loginBtn">Login</button> </div> <div> <h2>Google ReCaptcha</h2> <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> <button id="captchaBtn">Submit ReCaptcha</button> </div> <script> document.getElementById('loginBtn').addEventListener('click', function() { const email = document.getElementById('email').value; const password = document.getElementById('password').value; // Here you can add your login logic console.log(`Email: ${email}, Password: ${password}`); alert('Login functionality is being processed!'); // Replace with actual login process }); document.getElementById('captchaBtn').addEventListener('click', function() { const recaptchaResponse = grecaptcha.getResponse(); if (recaptchaResponse.length === 0) { alert('Please complete the ReCaptcha challenge.'); } else { // Here you can verify the captcha on your server-side console.log('Captcha Response:', recaptchaResponse); alert('Captcha verified! Now, proceed with your logic.'); // Replace with actual captcha handling } }); </script> </body> </html>
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login Page</title> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style> body { font-family: Arial, sans-serif; } button { margin: 10px; } </style>
+  </head> <body> <h1>Login Page</h1> <div> <h2>Or Login with Email & Password</h2> <input type="email" placeholder="Email" id="email" required> <input type="password" placeholder="Password" id="password" required> <button id="loginBtn">Login</button> </div> <div> <h2>Google ReCaptcha</h2> <div class="g-recaptcha" data-sitekey="6Lf1hdsqAAAAAJaEHxTyZiGPMuNA2WalCq06LEtx"></div> <button id="captchaBtn">Submit ReCaptcha</button> </div> 
+    <script> document.getElementById('loginBtn').addEventListener('click', function() { const email = document.getElementById('email').value; const password = document.getElementById('password').value; 
+                                                                                       // Here you can add your login logic
+                                                                                       console.log(`Email: ${email}, Password: ${password}`); alert('Login functionality is being processed!');
+                                                                                       // Replace with actual login process
+                                                                                      }); document.getElementById('captchaBtn').addEventListener('click', function() { const recaptchaResponse = grecaptcha.getResponse(); if (recaptchaResponse.length === 0) { alert('Please complete the ReCaptcha challenge.'); } else { 
+  // Here you can verify the captcha on your server-side 
+  console.log('Captcha Response:', recaptchaResponse); alert('Captcha verified! Now, proceed with your logic.'); 
+  // Replace with actual captcha handling
+} }); </script> </body>
+</html>
