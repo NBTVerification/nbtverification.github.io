@@ -1,1 +1,32 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Login Page</title> <link rel="stylesheet" href="loginstyle.css"> <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- Include recaptcha script --> </head> <body> <div class="login-container"> <h1>Welcome back!</h1> <form id="loginForm"> <input type="text" id="username" placeholder="Username" required> <input type="password" id="password" placeholder="Password" required> <p id="error-msg" class="hidden" style="color: red;">Username or password is incorrect, please try again.</p> <p id="recaptcha-msg" class="hidden" style="color: red;">Google reCAPTCHA isn't verified, please complete it. Thank you!</p> <div class="space"></div> <div class="g-recaptcha" data-sitekey="6Lf1hdsqAAAAAJaEHxTyZiGPMuNA2WalCq06LEtx" data-callback="onRecaptchaSuccess"></div> <button type="submit">Login</button> </form> <div class="links"> <a href="#">Already have an account?</a> <a href="#">Forgot username/password?</a> </div> </div> <script src="loginscript.js"></script> </body> </html>
+<!DOCTYPE html> 
+<html lang="en">
+  <head> <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <link rel="stylesheet" href="loginstyle.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- ReCaptcha script --> 
+  </head> 
+  <body> 
+    <div class="login-container"> 
+      <img src="https://cdn.glitch.global/0ef5d9a7-5b71-4f7a-b26c-d8b1f1b8308b/AdoloLogoTransparent.png?v=1739682798817" alt="Adolo logo" title="Click here to go back to the homepage!"></img>
+    <h1>Welcome back!</h1>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required> 
+
+      <!--Error messages (hidden)-->
+      <p id="error-msg" class="hidden" style="color: red;">Username or password is incorrect, please try again.</p> 
+      <p id="recaptcha-msg" class="hidden" style="color: red;">Google reCAPTCHA isn't verified, please complete it. Thank you!</p>
+      <div class="space"></div> 
+      
+      <div class="g-recaptcha" data-sitekey="6Lf1hdsqAAAAAJaEHxTyZiGPMuNA2WalCq06LEtx" data-callback="onRecaptchaSuccess"></div>
+      <button type="submit">Login</button> 
+    </form> 
+      <div class="links">
+        <a href="#">Already have an account?</a>
+        <a href="#">Forgot username/password?</a> 
+      </div>
+    </div> 
+    <script src="loginscript.js"></script> 
+  </body> 
+</html>
