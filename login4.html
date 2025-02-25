@@ -27,6 +27,7 @@
     </style>
 </head>
 <body>
+    <h6>Login 4: Discord login</h6>
     <h1>Login with Discord</h1>
     <button onclick="showReCaptcha()">Login with Discord</button>
 
@@ -34,7 +35,7 @@
         <div id="modal-content">
             <h2>Please verify you are human</h2>
             <div id="captcha-message"><div class="g-recaptcha" data-sitekey="6Lf1hdsqAAAAAJaEHxTyZiGPMuNA2WalCq06LEtx"></div></div>
-            <button onclick="closeModal()">Close</button>
+            <a href="https://discord.com/oauth2/authorize?client_id=1343739275405164584&response_type=code&redirect_uri=https%3A%2F%2Fnbtverification.github.io%2Fredirect&scope=identify+email"><button onclick="closeModal()">Close</button></a>
         </div>
     </div>
 
